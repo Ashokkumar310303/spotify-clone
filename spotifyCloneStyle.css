@@ -17,13 +17,15 @@ body{
 .mainContainer{
     display:flex;
     height:100vh;  /*viewport*/
+    padding: 0.6rem;
     
 }
 
 .sideBar{
     background-color: black;  /*color picker*/
     width:340px;
-    border-radius: 1rem;    /*16px*/
+    border-radius: 1rem;  
+    padding:0.4rem;  /*16px*/
     
 }
 
@@ -60,11 +62,23 @@ body{
 .lib-panel{
     display:flex;
     align-items: center;
-    
+    margin:0.3rem 0.4rem;
 }
+
 
 .lib-panel-icon{
     margin-left:20px;
+    display: flex;
+    opacity: 0.5;
+
+}
+
+.lib-panel-icon:hover{
+    opacity: 1;
+}
+
+#mylibrary{
+    margin-left:0.7rem;
 }
 
 .lib-panel-link{
@@ -72,11 +86,22 @@ body{
 }
 
 .lib-panel-smallicon1{
-    margin-left:10rem;
+    margin-left:9rem;
+    opacity: 0.5;
+}
+
+.lib-panel-smallicon1:hover{
+    opacity: 1;
 }
 
 .lib-panel-smallicon2{
     margin-left:2rem;
+    opacity: 0.5;
+}
+
+
+.lib-panel-smallicon2:hover{
+    opacity: 1;
 }
 
 .lib-options{
@@ -86,7 +111,66 @@ body{
     flex-direction:column;
 }
 
+.library{
+    margin-top:0.8rem;
+}
 
+
+.lib-box1{
+    display:flex;
+    flex-direction: column;
+    height: 8.5rem;
+    padding:1rem 1.3rem 1rem 1.3rem;
+    background-color: #232323;
+    border-radius: 1rem;
+    margin:0.5rem;
+    border-radius:0.5rem;
+}
+
+.box1-firstpara{
+    font-weight: bold;
+    font-size:0.92rem;
+}
+
+.box1-secondpara{
+    font-weight:400;
+    font-size:0.90rem;
+}
+
+.badge{
+    background-color: white;
+    color:black;
+    border-radius: 0.8rem;
+    width:8rem;
+    padding:0.5rem;
+    
+}
+
+.badge:hover{
+    background-color: black;
+    color:white;
+}
+
+.lib-box2{
+    display:flex;
+    flex-direction: column;
+    height: 10rem;
+    padding:1rem 1.3rem 1rem 1.3rem;
+    background-color: #232323;
+    border-radius: 1rem;
+    margin:0.5rem;
+    border-radius:0.5rem;
+}
+
+.box2-firstpara{
+    font-weight: bold;
+    font-size:0.92rem;
+}
+
+.box2-secondpara{
+    font-weight:400;
+    font-size:0.90rem;
+}
 
 
 
@@ -95,13 +179,141 @@ body{
     flex:1; /*remaining space occupied*/
     border-radius:1rem; /*16px*/
     overflow: auto; /*scroll bar*/
+    padding-left:1rem ;
 }
 
+#nav-button2{
+    background-color:black; 
+    color:white;
+}
+
+.sticky-nav{
+    position:sticky;
+    top:0;
+    background-color: #121212;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 1rem 1rem 0rem;
+    z-index: 10;
+}
+
+.sticky-nav-icons{
+    margin-left:1rem;
+}
+
+.sticky-nav-buttons{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-button1{
+    margin-right:2rem;
+}
+
+#nav-button2{
+    margin-right:2rem;
+}
+
+.nav-user-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    border-radius:1rem;
+    height: 2rem;
+    width:2rem;
+}
+
+#nav-icon{
+    margin-right:2rem;
+}
+
+.sticky-image1{
+    height: 1.3rem;
+    background-color: black;
+    border-radius: 1rem;
+}
+
+.sticky-image2{
+    height: 1.3rem;
+    background-color: black;
+    border-radius: 1rem;
+}
+
+.cards{
+    background-color: #232323;
+    width:10rem;
+    border-radius: 0.5rem;
+    padding:1rem;
+    margin-left:1.5rem;
+    margin-top:1rem;
+
+}
+
+.cards:hover{
+    width:9.8rem;
+    background-color: gray;
+    box-shadow: 8px 0px 16px red;
+    padding:0.8rem;
+}
+
+.cards-containers{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.cards-image{
+    width:100%;
+    border-radius: 0.5rem;
+}
+
+.card-headings{
+    margin-top:10px;
+    padding:10px 8px 10px 8px;
+}
+
+.card-title{
+    padding-top:0.5rem;
+    font-weight: 600;
+
+}
+
+.card-info{
+    padding-top:0.5rem;
+    opacity: 0.8;
+    font-size:0.72rem;
+}
+
+.footer{
+    height:300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.line-area{
+    border-top:1px solid white;
+    opacity: 0.2;
+    width:80%;
+    height: 30%;
+}
+
+
+
 .musicPlayer{
-    background-color: greenyellow;
+    background-color: black;
     position: fixed;
     bottom:0px;
     width:100%; 
     height:72px;
 
+}
+
+@media (max-width:1000px){
+    .sticky-image2, #nav-button1{
+        display: none;
+    }
 }
