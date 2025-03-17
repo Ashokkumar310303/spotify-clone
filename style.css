@@ -327,8 +327,149 @@ body{
     bottom:0px;
     width:100%; 
     height:72px;
-
+    display: flex;
 }
+
+.album{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    width:25%;
+    margin:1rem;
+}
+
+.album-song{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right:2rem;
+}
+
+
+
+.song-name{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.song-author{
+    font-size:0.6rem;
+    opacity: 0.6;
+}
+
+.album-image{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(./images/love_today.jpg);
+    background-size:cover;
+    height:3rem;
+    width:3rem;
+    border-radius: 0.5rem;
+}
+
+.album-heart{
+    opacity: 0.6;
+}
+
+.album-heart:hover{
+    opacity: 1;
+}
+
+.album-purse{
+    opacity: 0.6;
+}
+
+.album-purse:hover{
+    opacity: 1;
+}
+
+.player{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:75%;
+    margin:1rem;
+}
+
+.player-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icon-play{
+    margin-right:2.9rem;
+}
+
+#playing-icon{
+    height:2rem;
+    opacity: 1;
+}
+
+#playing-icon:hover{
+    height:2.2rem;
+   
+}
+
+
+
+.player-icon-area{
+    height:1rem;
+    opacity: 0.6;
+}
+
+#playbutton1:hover{
+    opacity: 1;
+}
+
+#playbutton2:hover{
+    opacity: 1;
+}
+
+#playbutton4:hover{
+    opacity: 1;
+}
+
+#playbutton5:hover{
+    opacity: 1;
+}
+
+.settings{
+    display:flex;
+    align-items: center;
+    width:25%;
+    margin:1rem;
+}
+
+.settings-icon{
+    margin-right:0.7rem;
+    opacity: 0.6;
+}
+
+#set-icon1:hover{
+    opacity: 1;
+}
+
+#set-icon2:hover{
+    opacity: 1;
+}
+
+#set-icon3:hover{
+    opacity: 1;
+}
+
+#set-icon4:hover{
+    opacity: 1;
+}
+
+#set-icon5:hover{
+    opacity: 1;
+}
+
 
 @media (max-width:1000px){
     .sticky-image2, #nav-button1{
