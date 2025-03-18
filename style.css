@@ -422,6 +422,16 @@ body{
 
 }
 
+.current-Time{
+    margin-right:1rem;
+    font-size:0.9rem;
+}
+
+.total-Time{
+    margin-left:1rem;
+    font-size:0.9rem;
+}
+
 .progress-bar-below{
     width: 70%;
     appearance: none;
