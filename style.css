@@ -270,7 +270,6 @@ body{
 }
 
 .cards:hover{
-    border-right:1px solid white;
     width:9.8rem;
     background-color: grey;
     box-shadow: 8px 0px 16px #1bd760;
