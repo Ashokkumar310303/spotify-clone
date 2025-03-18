@@ -273,7 +273,7 @@ body{
 .cards:hover{
     width:9.8rem;
     background-color: gray;
-    box-shadow: 8px 0px 16px green;
+    box-shadow: 8px 0px 16px #1bd760;
     padding:0.8rem;
 }
 
@@ -415,6 +415,37 @@ body{
    
 }
 
+.player-control{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.progress-bar-below{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.progress-bar-below::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius:5rem;
+    height: 0.2rem;
+}
+
+.progress-bar-below::-webkit-slider-thumb{
+    appearance: none;
+    background-color: #1bd760;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    margin-top:-0.4rem;
+}
+
+
 
 
 .player-icon-area{
@@ -450,6 +481,24 @@ body{
     opacity: 0.6;
 }
 
+.settings-bar-below{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:80%;
+    appearance: none;
+    height:0.2rem;
+    border-radius: 1rem;
+    background-color:#1bd760;
+}
+
+.settings-bar-below::-webkit-slider-thumb{
+    appearance: none;
+    height:0.8rem;
+    width:0.8rem;
+    background-color: white;
+    border-radius: 50%;
+}
 #set-icon1:hover{
     opacity: 1;
 }
